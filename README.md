@@ -1,4 +1,4 @@
-# 👀 Reepositorio
+# 📃 Aulas de DS!
 Aulas de Desenvolvimento de Software I utilizando java
 
 # Aula 01 - Iniciando Java
