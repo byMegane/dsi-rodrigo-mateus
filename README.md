@@ -22,7 +22,8 @@ Sobre o código `Main.java`:
 ```java
 package aula01; //define q pertence a pasta aula01
 
-public  class  Main {  //caracteriza o arquivo, onde declara sua classe e seu nome (main)
+public  class  Main {  //ca
+// racteriza o arquivo, onde declara sua classe e seu nome (main)
 	public  static  void  main(String[] args) {
 		System.out.println("Hello World"); //exibe a frase na tela
 	}
@@ -41,3 +42,14 @@ ls
 cd dsi-rodrigo-mateus/
 ```
 
+
+
+cd [nome da pasta]
+javac .\Main.java // "javac" serve para compilar o codigo
+java .\Main.java // roda o codigo
+
+meetup
+
+1 == 1 (um é igual a um?)
+1 == "1" (um é igual a un?) // aqui ele so analisa o caracter
+1 === "1' (um é exatamente igual a un?) // aqui ele analisa o tipo de variavel q ele é
