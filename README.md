@@ -52,4 +52,4 @@ meetup
 
 1 == 1 (um é igual a um?)
 1 == "1" (um é igual a un?) // aqui ele so analisa o caracter
-1 === "1' (um é exatamente igual a un?) // aqui ele analisa o tipo de variavel q ele é
+1 === "1' (um é exatamente igual a un?) // aqui ele analisa o tipo de variavel q ele é 
