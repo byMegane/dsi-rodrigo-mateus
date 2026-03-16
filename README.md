@@ -33,9 +33,9 @@ public  class  Main {  //caracteriza o arquivo, onde declara sua classe e seu no
 1. **Instalando o GitBash**: Clique no [Git](https://git-scm.com/install/windows);
 2. **Comandos do GitBash**: 
 ```
-$ git config --global user.name  'Rodrigo Mateus'
-$ git config --global user.email rodrigoglasses@gmail.com
-$ git clone https://github.com/byMegane/dsi-rodrigo-mateus.git
-$ code . (para abrir o vs code)
+git config --global user.name  'Rodrigo Mateus'
+git config --global user.email rodrigoglasses@gmail.com
+git clone https://github.com/byMegane/dsi-rodrigo-mateus.git
+code . (para abrir o vs code)
 ```
 
