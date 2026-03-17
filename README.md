@@ -1,6 +1,26 @@
 # 📃 Aulas de DS!
 Aulas de Desenvolvimento de Software I utilizando java
 
+# Aula 02 - Iniciando Variaveis 📈
+
+## **1 - Criação de arquivo** 📝
+No terminal do Vscode (```ctrl + '```), digite esses comandos para ele identificar seu arquivo e sua pasta:
+```java
+cd [nome da pasta] // navega pelas pastas, identificando-a
+javac .\Main.java // "javac" serve para compilar o codigo
+java .\Main.java // roda o codigo
+```
+## 2 - Regras do Java / resumo da aula⚒️
+
+1 - Nessa aula, eu aprendi como o java diferencia variáveis, visto no exemplo abaixo:
+```java
+1 == 1 (um é igual a um?)
+1 == "1" (um é igual a un?) // aqui ele so analisa o caractere
+1 === "1' (um é exatamente igual a un?) // aqui ele analisa o tipo de variável q ele é 
+```
+
+2 - Aprendemos também a juntar strings e vimos o ```.concat```, como visto no [projeto da aula 2](https://github.com/byMegane/dsi-rodrigo-mateus/blob/main/aula02/Variaveis.java).
+
 # Aula 01 - Iniciando Java ✅
 
 ##  Configurando a máquina ⚙️
@@ -42,14 +62,3 @@ ls
 cd dsi-rodrigo-mateus/
 ```
 
-
-
-cd [nome da pasta]
-javac .\Main.java // "javac" serve para compilar o codigo
-java .\Main.java // roda o codigo
-
-meetup
-
-1 == 1 (um é igual a um?)
-1 == "1" (um é igual a un?) // aqui ele so analisa o caracter
-1 === "1' (um é exatamente igual a un?) // aqui ele analisa o tipo de variavel q ele é 
