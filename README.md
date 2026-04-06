@@ -62,3 +62,8 @@ ls
 cd dsi-rodrigo-mateus/
 ```
 
+Pascal case - NomeVariavel //
+Camel case - nomeVariavel // (para variaveis)
+Snake case - nome_variavel | NOME_VARIAVEL // (para constantes)
+Kebab case - nome-variavel | NOME_VARIAVEL 
+// variaveis totalmente maiusculas são chamadas de screaming 
