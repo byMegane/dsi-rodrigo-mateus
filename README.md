@@ -67,3 +67,27 @@ Camel case - nomeVariavel // (para variaveis)
 Snake case - nome_variavel | NOME_VARIAVEL // (para constantes)
 Kebab case - nome-variavel | NOME_VARIAVEL 
 // variaveis totalmente maiusculas são chamadas de screaming 
+
+Aula 04
+
+== -> igual
+=== -> estritamente igual
+=> ou <= ----> maior igual ou menor igual
+|| -> ou
+&& -> e
+
+0 || 1 -> 1 Bit
+8 bits -> 1 Byte
+
+tipos de declaração de número:
+byte
+Short
+Int
+Long
+
+float
+double
+
+boolean - true or false / yes or no
+
+
