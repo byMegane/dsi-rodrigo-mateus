@@ -15,7 +15,6 @@ Aulas de Desenvolvimento de Software I utilizando java
  |**x <= y**| x é **menor ou igual** a y|
 
 ## 2 - Operadores lógicos
-| Operador | 
 && - adiciona condição e o resultado é aquele que é true nas 2 ou mais condições
 || - adiciona condição e o resultado é aquele que é true em pelo menos 1 condição
 ! - exclusão daqueles que cumprem a condição, ou então, inverte o valor boolean
