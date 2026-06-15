@@ -78,7 +78,7 @@ public class Exercicio01 {
         float adicionalTempoServico;
         if (tempoServico > 15) {
             adicionalTempoServico = (float) (salarioBruto * 3.5 / 100);
-        } else if (tempoServico <= 15 && tempoSservico > 5 && idade > 30) {
+        } else if (tempoServico <= 15 && tempoServico > 5 && idade > 30) {
             adicionalTempoServico = (float) (salarioBruto * 1.5 / 100);
         } else {
             adicionalTempoServico = 0;
