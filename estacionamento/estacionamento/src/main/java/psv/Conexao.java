@@ -12,12 +12,19 @@ public class Conexao {
 
     private static final String USUARIO = "root";
 
-    private static final String SENHA = "Guardadamoita_2";
-
     public static Connection abrirConexao() {
         try {
+            String senha = System.getenv("ESTACIONAMENTO_DB_PASSWORD");
+
+            if (senha == null || senha.isBlank()) {
+                System.out.println(
+                        "Configure a variavel ESTACIONAMENTO_DB_PASSWORD."
+                );
+                return null;
+            }
+
             Connection con = DriverManager.getConnection(
-                    URL, USUARIO, SENHA
+                    URL, USUARIO, senha
             );
 
             System.out.println("Conexao aberta com sucesso!");
