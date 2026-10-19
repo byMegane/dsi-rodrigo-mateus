@@ -7,31 +7,38 @@ import java.sql.SQLException;
 
 public class Conexao {
 
-    private static final String URL =
+    private static final String URL_PADRAO =
             "jdbc:mysql://localhost:3306/estacionamento";
-
-    private static final String USUARIO = "root";
 
     public static Connection abrirConexao() {
         try {
+            String url = System.getenv("ESTACIONAMENTO_DB_URL");
+            String usuario = System.getenv("ESTACIONAMENTO_DB_USER");
             String senha = System.getenv("ESTACIONAMENTO_DB_PASSWORD");
 
-            if (senha == null || senha.isBlank()) {
+            if (url == null || url.isBlank()) {
+                url = URL_PADRAO;
+            }
+
+            if (usuario == null || usuario.isBlank()
+                    || senha == null || senha.isBlank()) {
                 System.out.println(
-                        "Configure a variavel ESTACIONAMENTO_DB_PASSWORD."
+                        "Configure as variaveis de ambiente "
+                        + "ESTACIONAMENTO_DB_USER e "
+                        + "ESTACIONAMENTO_DB_PASSWORD."
                 );
                 return null;
             }
 
             Connection con = DriverManager.getConnection(
-                    URL, USUARIO, senha
+                    url, usuario, senha
             );
 
             System.out.println("Conexao aberta com sucesso!");
             return con;
 
         } catch (SQLException e) {
-            System.out.println("Erro ao conectar ao MySQL:");
+            System.out.println("Erro ao conectar ao banco:");
             System.out.println(e.getMessage());
             return null;
         }
