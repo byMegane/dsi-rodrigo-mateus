@@ -8,28 +8,28 @@ import java.sql.SQLException;
 public class Conexao {
 
     private static final String URL_PADRAO =
-            "jdbc:mysql://localhost:3306/estacionamento";
+            "jdbc:mysql://127.0.0.1:3306/estacionamento";
 
     public static Connection abrirConexao() {
+        String url = System.getenv("ESTACIONAMENTO_DB_URL");
+        String usuario = System.getenv("ESTACIONAMENTO_DB_USER");
+        String senha = System.getenv("ESTACIONAMENTO_DB_PASSWORD");
+
+        if (url == null || url.isBlank()) {
+            url = URL_PADRAO;
+        }
+
+        // Configuração padrão para o computador da escola.
+        if (usuario == null || usuario.isBlank()) {
+            usuario = "root";
+        }
+
+        // Se a variável da senha não existir, usa senha vazia.
+        if (senha == null) {
+            senha = "";
+        }
+
         try {
-            String url = System.getenv("ESTACIONAMENTO_DB_URL");
-            String usuario = System.getenv("ESTACIONAMENTO_DB_USER");
-            String senha = System.getenv("ESTACIONAMENTO_DB_PASSWORD");
-
-            if (url == null || url.isBlank()) {
-                url = URL_PADRAO;
-            }
-
-            if (usuario == null || usuario.isBlank()
-                    || senha == null || senha.isBlank()) {
-                System.out.println(
-                        "Configure as variaveis de ambiente "
-                        + "ESTACIONAMENTO_DB_USER e "
-                        + "ESTACIONAMENTO_DB_PASSWORD."
-                );
-                return null;
-            }
-
             Connection con = DriverManager.getConnection(
                     url, usuario, senha
             );
